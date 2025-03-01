@@ -90,11 +90,11 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             question: "Where did you come from?",
             answers: [
-                "Forced from your ancestral home, you subsisted off the great beasts beneath the waves to become a true pirate.",
-                "You are heir to the ruins and secrets of the islands — and even lay claim to treasures hidden beneath the sea.",
-                "Banished from your homeland, you now hone your skills to perfection — and protect the worthy.",
-                "Eager to make you fortune, you voyaged from your frozen homeland, braving intense storms to reach a distant paradise.",
-                "You have a mysterious, smoldering allure — like a moth to a flame, your history has been consumed by the volcanic eruptions that call to you."
+                "Forced from my ancestral home, I subsisted off the great beasts and become a true pirate.",
+                "I am heir to the ruins and secrets of the islands — and even lay claim to forgotten treasures beneath the sea.",
+                "Banished from my homeland, now I hone my skills to perfection — and protect the worthy.",
+                "Eager to make my fortune, I voyaged from my frozen homeland, braving intense storms to reach this distant paradise.",
+                "I have a mysterious, smoldering allure — like a moth to a flame, my history has been consumed by the volcanic eruptions that call to me."
             ],
             personality: [
                 "KW", 
