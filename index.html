@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cabalquiz.css">
+    <title>The Cabal of Thieves: Which Faction Suits Your Personality?</title>
+</head>
+<body>
+    <div class="container">
+        <div class="d-table">
+            <div class="d-table-row">
+                <div class="d-table-cell">
+                    <img src="images/cabal.webp" alt="Logo" aria-hidden="true" class="cabal-logo">
+                </div>
+                <div class="d-table-cell">
+                    <h1><span class="cabal">The Cabal of Thieves:</span> Which Faction Suits Your Personality?</h1>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div id="quizContainer">
+            <h2>Question <span id="questionID">X</span> of <span id="questionsTotal">Y</span></h2>
+            <p id="question"></p>
+            <div id="answers"></div>
+        </div>
+        <div id="resultContainer" style="display:none;">
+            <p>Based on your answers, you might want to join:</p>
+            <img id="icon-ac" class="emblem" src="images/ac.webp" alt="Emblem" aria-hidden="true">
+            <img id="icon-ao" class="emblem" src="images/ao.webp" alt="Emblem" aria-hidden="true">
+            <img id="icon-kw" class="emblem" src="images/kw.webp" alt="Emblem" aria-hidden="true">
+            <img id="icon-ns" class="emblem" src="images/ns.webp" alt="Emblem" aria-hidden="true">
+            <img id="icon-mg" class="emblem" src="images/mg.webp" alt="Emblem" aria-hidden="true">
+            <p id="result"></p>
+            <p>Here are your full results:</p>
+            <table cellspacing="0" cellpadding="0">
+                <caption style="display: none;">Full Results</caption>
+                <thead>
+                    <tr>
+                        <th scope="col" width="40%" style="text-align: left;">Faction</th>
+                        <th scope="col" width="15%" style="text-align: right">Affinity</th>
+                        <th scope="col" width="45%" aria-hidden="true"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-stripe">
+                        <th scope="col" style="text-align: left; font-weight: normal;">The Ancient Order of Chaos</th>
+                        <td scope="col" style="text-align: right;"><span id="scoreAO"></span>%</td>
+                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphAO">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="col" style="text-align: left; font-weight: normal;">The Ashen Creed</th>
+                        <td scope="col" style="text-align: right;"><span id="scoreAC"></span>%</td>
+                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphAC">&nbsp;</span></td>
+                    </tr>
+                    <tr class="table-stripe">
+                        <th scope="col" style="text-align: left; font-weight: normal;">The Kinship of the Wilds</th>
+                        <td scope="col" style="text-align: right;"><span id="scoreKW"></span>%</td>
+                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphKW">&nbsp;</span></td>
+                    </tr>
+                    <tr>
+                        <th scope="col" style="text-align: left; font-weight: normal;">The Norsemen of the Shores</th>
+                        <td scope="col" style="text-align: right;"><span id="scoreNS"></span>%</td>
+                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphNS">&nbsp;</span></td>
+                    </tr>
+                    <tr class="table-stripe">
+                        <th scope="col" style="text-align: left; font-weight: normal;">The Marauders of Golden Shores</th>
+                        <td scope="col" style="text-align: right;"><span id="scoreMG"></span>%</td>
+                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphMG">&nbsp;</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="small"><em>Numbers may not add up to 100% due to rounding.</em></p>
+            <button id="refreshButton" onClick="window.location.reload();">Start Over</button>
+        </div>
+    </div>
+    <script src="js/cabalquiz.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+body,
+html {
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, Tahoma, Verdana, sans-serif;
+  background-color: #303030;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  height: 100vh;
+  margin: 0;
+}
+
+.cabal-logo { margin-right: 1rem; }
+
+.d-table {
+  display:table;
+  border-bottom: 3px solid white;
+}
+
+.d-table-row { display: table-row; }
+.d-table-cell { display: table-cell; vertical-align: middle; }
+
+h1, h2, h3, h4, h5, h6 { 
+  font-family: Arial, Tahoma, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: left;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+h1 span.cabal { font-size: 1.25rem; display: block; font-weight: normal; }
+
+h2 { 
+  text-align: left;
+  font-size: 0.75rem;
+  margin-bottom: 0;
+  font-weight: normal;
+}
+
+p.small { font-size: 0.8rem; }
+
+.container {
+  background: #202020;
+  padding: 30px 50px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+#quizContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+#question {
+  text-align: left;
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+#answers button {
+  margin-bottom: 0.75rem;
+}
+
+button {
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #404040;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  text-shadow: 1px 1px #000;
+}
+
+button:hover {
+  background-color: #b24000;
+}
+
+button:active {
+  background-color: #d67702;
+}
+
+#refreshButton {
+  margin-top: 20px;
+}
+
+#refreshButton {
+  display: block;
+  text-align: center;
+}
+
+#resultContainer {
+  text-align: center;
+}
+
+#result {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 0.75rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Results styling */
+.show { display: block !important; }
+table { width: 100%; font-size: 0.8rem; }
+th, td { padding: 0.25rem; vertical-align: top; overflow: hidden; }
+.table-stripe { background-color: #303030; }
+.graph { display: inline-block; }
+.emblem { display: block; text-align: center; margin-bottom: 1rem; }
+
+/* Ancient Order of Chaos */
+#icon-ao { display: none; max-width: 200px; margin-left: auto; margin-right: auto; }
+#icon-ao.AO { display: block; }
+p.AO { 
+  color: #8eb34b;
+  border-top: 3px solid #50814b;
+  border-bottom: 3px solid #50814b;
+  background-color: #315633;
+}
+#graphAO {  background-color: #50814b; }
+
+/* The Ashen Creed */
+#icon-ac { display: none; max-width: 200px; margin-left: auto; margin-right: auto; }
+#icon-ac.AC { display: block; }
+p.AC { 
+  color: #c03834;
+  border-top: 3px solid #972d2f;
+  border-bottom: 3px solid #972d2f;
+  background-color: #411817;
+}
+#graphAC {  background-color: #972d2f; }
+
+/* Kinship of the Wilds */
+#icon-kw { display: none; max-width: 200px; margin-left: auto; margin-right: auto; }
+#icon-kw.KW { display: block; }
+p.KW { 
+  color: #d9b3db;
+  border-top: 3px solid #9f5f91;
+  border-bottom: 3px solid #9f5f91;
+  background-color: #4a2756;
+}
+#graphKW {  background-color: #9f5f91; }
+
+/* Norsemen of the Shores */
+#icon-ns { display: none; max-width: 200px; margin-left: auto; margin-right: auto; }
+#icon-ns.NS { display: block; }
+p.NS { 
+  color: #82ced7;
+  border-top: 3px solid #59aabe;
+  border-bottom: 3px solid #59aabe;
+  background-color: #234a6c;
+}
+#graphNS {  background-color: #59aabe; }
+
+/* Marauders of the Shores of Gold */
+#icon-mg { display: none; max-width: 200px; margin-left: auto; margin-right: auto; }
+#icon-mg.MG { display: block; }
+p.MG { 
+  color: #98c7b2;
+  border-top: 3px solid #69a188;
+  border-bottom: 3px solid #69a188;
+  background-color: #2b513f;
+}
+#graphMG {  background-color: #69a188; }
