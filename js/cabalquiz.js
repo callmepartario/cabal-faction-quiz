@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
     /* Enter (and order) questions to ask */
     const questions = [
         {
-            questionID: "1",
             question: "There's a ship in the distance with an emissary flag heading toward you. They're not Reapers. What say you?",
             answers: [
                 "Do they have anything we want?",
@@ -21,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            questionID: "2",
             question: "Choose a color:",
             answers: [
                 "Blue — The sea and sky are all I need.",
@@ -39,11 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            questionID: "3",
             question: "It's Friday night, and you've just finished supplying your ship at the outpost. Where to?",
             answers: [
                 "The Devil's Roar — The sight of erupting volcanoes stirs my passions.",
-                "Doesn't matter — as long as there's someone to sink.",
+                "Doesn't matter — so long as there's a fight to be had.",
                 "Kraken hunting in the Wilds!",
                 "You know, there's always action in the Ancient Isles!",
                 "The cerulean skies and white sandy beaches of the Shores of Plenty are calling to me..."
@@ -57,14 +54,13 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            questionID: "4",
             question: "A fast-moving storm approaches. What now?",
             answers: [
-                "Go around it — we'll conserve supplies.",
-                "I'm just waiting for the bell — already whipped my fishing pole out.",
+                "Steer clear — we'll conserve supplies that way.",
+                "I'm just waiting for the bell — I've already got my fishing pole out.",
                 "Sail on! No storm's the boss of me.",
-                "Let me just go and make sure my keg stash is safe...",
-                "Good. We can use it for cover."
+                "Let me just go and make sure that second keg stash is safe...",
+                "Good. We can use it for cover and surprise our enemies."
             ],
             personality: [
                 "MG", 
@@ -75,13 +71,12 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            questionID: "5",
             question: "The winds of change are blowing. Choose the next world event!",
             answers: [
                 "A glowing skull taunts you from the sky — the living dead await you at a nearby Skeleton Fort!",
                 "A great horn bellows — the unmistakable herald of the Fort of Fortune!",
                 "The wind dies, and the ship surrounded by inky black water. Enormous tentacles rise from the waves — it's the kraken!",
-                "The sickening gurgle of a skeleton fleet bubbles up from below — send that Skeleton Fleet back to Davy Jones' locker!",
+                "A sickening gurgle emanates from below — send that Skeleton Fleet back to Davy Jones' locker!",
                 "A red swirl fills the horizon — the Ashen Winds are blowing again, and a Skeleton Lord awaits!"
             ],
             personality: [
@@ -93,10 +88,9 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            questionID: "6",
-            question: "Which of the following appeals to you most?",
+            question: "Where did you come from?",
             answers: [
-                "Forced from your ancestral home, you subsisted off the great beasts beneath the waves and became a pirate.",
+                "Forced from your ancestral home, you subsisted off the great beasts beneath the waves to became a true pirate.",
                 "You are heir to the ruins and secrets of the islands — and even lay claim to treasures hidden beneath the sea.",
                 "Banished from your homeland, you now hone your skills to perfection — and protect the worthy.",
                 "Eager to make you fortune, you voyaged from your frozen homeland, braving intense storms to reach a distant paradise.",
@@ -111,7 +105,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            questionID: "7",
             question: "A bug in the game makes most of your favorite titles missing. Which do you use in the meantime?",
             answers: [
                 "Legend of the Sun",
@@ -129,7 +122,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         }/*,
         {
-            questionID: "8",
             question: "It's community weekend, and the gold is flowing! How do you spend it?",
             answers: [
                 "",
@@ -147,7 +139,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            questionID: "9",
             question: "You've just cleared the Fort of Fortune, and a Reaper ship is sailing straight toward you. You notice a hefty supply of kegs in the vault.",
             answers: [
                 "", 
@@ -165,7 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            questionID: "10",
             question: "A friend invites you to fish battlegills for a commendation. How fun are the next few hours?",
             answers: [
                 "", 
@@ -183,7 +173,6 @@ document.addEventListener('DOMContentLoaded', function () {
             ]
         },
         {
-            questionID: "11",
             question: "An eager, inexperienced pirate joins your crew. How do you show them the ropes?",
             answers: [
                 "", 
@@ -222,24 +211,29 @@ document.addEventListener('DOMContentLoaded', function () {
     };
 
     /* Define elements by ID */
-    const questionIDElement = document.getElementById('questionID');
+    const questionNumberElement = document.getElementById('questionNumber');
     const questionElement = document.getElementById('question');
     const answersElement = document.getElementById('answers');
     const resultContainer = document.getElementById('resultContainer');
     const resultElement = document.getElementById('result');
 
     /* Count total number of questions */
+    let questionNumber = 0;
     let questionsTotal = 0;
     for (const obj of questions) {
-    if (obj.questionID > 0) questionsTotal++;
+    if (obj.question !== 0) questionsTotal++;
     }
     console.log(questionsTotal);
     document.getElementById('questionsTotal').textContent = questionsTotal;
 
     /* Show a question */
     function showQuestion(questionIndex) {
+
         const question = questions[questionIndex];
-        questionIDElement.textContent = question.questionID;
+        
+        questionNumber++;
+        questionNumberElement.textContent = questionNumber;
+
         questionElement.textContent = question.question;
         answersElement.innerHTML = '';
         question.answers.forEach((answer, index) => {
@@ -261,6 +255,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             showResult();
         }
+
     };
 
     /* Populate results */

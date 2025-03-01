@@ -5,7 +5,7 @@ html {
 
 body {
   font-family: Arial, Tahoma, Verdana, sans-serif;
-  background-color: #303030;
+  background-color: #1c1f21;
   color: #fff;
   display: flex;
   justify-content: center;
@@ -14,11 +14,16 @@ body {
   margin: 0;
 }
 
+a { color: #facc8e; }
+a:hover { color: #fca832; }
+a { text-decoration: none; }
+
 .cabal-logo { margin-right: 1rem; }
 
 .d-table {
   display:table;
   border-bottom: 3px solid white;
+  margin-bottom: 0.5rem;
 }
 
 .d-table-row { display: table-row; }
@@ -44,11 +49,13 @@ h2 {
   font-weight: normal;
 }
 
+p { text-align: left; }
+
 p.small { font-size: 0.8rem; }
 
 .container {
-  background: #202020;
-  padding: 30px 50px;
+  background: #17191a;
+  padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -67,7 +74,6 @@ p.small { font-size: 0.8rem; }
 }
 
 #question {
-  text-align: left;
   font-size: 1.25rem;
   margin-bottom: 1.25rem;
 }
@@ -80,23 +86,26 @@ button {
   display: block;
   text-align: left;
   width: 100%;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   font-size: 16px;
-  background-color: #404040;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
+	background-color: #292e31; 
+  color: #facc8e;
+  border: 3px solid #1d2022;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s;
   text-shadow: 1px 1px #000;
 }
 
-button:hover {
-  background-color: #b24000;
+button:hover { 
+	color: #fff;
+	background-color: #953400; 
+  border: 3px solid #672401;
 }
 
 button:active {
   background-color: #d67702;
+  border: 3px solid #953400;
 }
 
 #refreshButton {

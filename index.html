@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cabalquiz.css">
-    <title>The Cabal of Thieves: Which Faction Suits Your Personality?</title>
+    <link rel="manifest" href="js/cabalquiz.json">
+    <title>The Cabal of Thieves: Faction Affinity Quiz</title>
 </head>
 <body>
     <div class="container">
@@ -14,13 +15,13 @@
                     <img src="images/cabal.webp" alt="Logo" aria-hidden="true" class="cabal-logo">
                 </div>
                 <div class="d-table-cell">
-                    <h1><span class="cabal">The Cabal of Thieves:</span> Which Faction Suits Your Personality?</h1>
+                    <p><strong><a href="https://thecabalofthieves.com/">The Cabal of Thieves</a></strong></p> 
+                    <h1>Faction Affinity Quiz</h1>
                 </div>
             </div>
         </div>
-        <hr>
         <div id="quizContainer">
-            <h2>Question <span id="questionID">X</span> of <span id="questionsTotal">Y</span></h2>
+            <h2>Question <span id="questionNumber">X</span> of <span id="questionsTotal">Y</span></h2>
             <p id="question"></p>
             <div id="answers"></div>
         </div>
@@ -33,6 +34,7 @@
             <img id="icon-mg" class="emblem" src="images/mg.webp" alt="Emblem" aria-hidden="true">
             <p id="result"></p>
             <p>Here are your full results:</p>
+            <p class="small"><em>Note: Numbers may not add up to 100% due to rounding.</em></p>
             <table cellspacing="0" cellpadding="0">
                 <caption style="display: none;">Full Results</caption>
                 <thead>
@@ -70,7 +72,6 @@
                     </tr>
                 </tbody>
             </table>
-            <p class="small"><em>Numbers may not add up to 100% due to rounding.</em></p>
             <button id="refreshButton" onClick="window.location.reload();">Start Over</button>
         </div>
     </div>
