@@ -1,5 +1,5 @@
 /* Basics */
-body, html { overflow: hidden; }
+body, html { overflow: auto; }
 body {
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
@@ -68,6 +68,7 @@ h2 {
   font-size: 0.75rem;
   margin-bottom: 0.75rem;
   margin-left: 1.5rem;
+  font-weight: normal;
 }
 p { text-align: left; }
 .small { font-size: 0.8rem; }
@@ -150,7 +151,7 @@ div.AO {
   background: linear-gradient(180deg, #315633 0%, #1a331b 100%);
 }
 div.AO img.emblem-AO { display: block; }
-#graphAO {  background-color: #50814b; }
+#graphAO {  background-color: #0f8003; }
 
 /* The Ashen Creed */
 div.AC { 
@@ -161,7 +162,7 @@ div.AC {
   background: linear-gradient(180deg, #411817 0%, #2e0f0e 100%);
 }
 div.AC img.emblem-AC { display: block; }
-#graphAC {  background-color: #972d2f; }
+#graphAC {  background-color: #9c080b; }
 
 /* Kinship of the Wilds */
 div.KW { 
@@ -172,7 +173,7 @@ div.KW {
   background: linear-gradient(180deg, #4a2756 0%, #33173c 100%);
 }
 div.KW img.emblem-KW { display: block; }
-#graphKW {  background-color: #9f5f91; }
+#graphKW {  background-color: #792266; }
 
 /* Norsemen of the Shores */
 div.NS { 
@@ -183,8 +184,7 @@ div.NS {
   background: linear-gradient(180deg, #234a6c 0%, #122c43 100%);
 }
 div.NS img.emblem-NS { display: block; }
-
-#graphNS {  background-color: #59aabe; }
+#graphNS {  background-color: #0e9abd; }
 
 /* Marauders of Golden Shores */
 div.MG { 
@@ -195,4 +195,4 @@ div.MG {
   background: linear-gradient(180deg, #2b513f 0%, #1a3b2c 100%);
 }
 div.MG img.emblem-MG { display: block; }
-#graphMG {  background-color: #69a188; }
+#graphMG {  background-color: #0ba761; }
