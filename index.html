@@ -15,7 +15,7 @@
         <div class="d-table">
             <div class="d-table-row">
                 <div class="d-table-cell valign-middle">
-                    <p class="cabal"><strong><a href="https://thecabalofthieves.com/">The Cabal of Thieves</a></strong></p> 
+                    <p class="cabal">The Cabal of Thieves</strong></p> 
                     <h1>Faction Affinity Quiz</h1>
                 </div>
                 <div class="d-table-cell valign-middle">
@@ -25,7 +25,7 @@
         </div>
         <div id="quizContainer">
             <h2>Question <span id="questionNumber">X</span> of <span id="questionsTotal">Y</span>:</h2>
-            <div id="questionContainer">
+            <div id="questionContainer" class="questionContainer">
                 <div class="d-table">
                     <div class="d-table-row">
                         <div class="d-table-cell valign-top" style="width: 5%;">
@@ -38,7 +38,7 @@
                 </div>
             </div>
             <div class="clearfix"></div>
-            <div id="answers"></div>
+            <div id="answers" class="answers"></div>
         </div>
         <div id="resultContainer" style="display:none;">
             <p style="text-align: center;">Based on your answers, you might want to join:</p>
@@ -87,7 +87,25 @@
                 </tbody>
             </table>
             <p class="small">Note: Numbers may not add up to 100% due to rounding.</p>
-            <button id="refreshButton" onClick="window.location.reload();">Start Over</button>
+            <div class="questionContainer">
+                <div class="d-table">
+                    <div class="d-table-row">
+                        <div class="d-table-cell valign-top" style="width: 5%;">
+                            <img class="dialogue" src="images/dialogue.webp" alt="Dialogue" aria-hidden="true">
+                        </div>
+                        <div class="d-table-cell valign-top">
+                            <p>Where to next, captain?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="answers" class="answers">
+                <button id="refreshButton" onClick="window.location.reload();">Let me take the quiz again!</button>
+                <button id="refreshButton" onclick="window.location.href='https://www.seaofthieves.com/';">What is the Sea of Thieves?</button>
+                <button id="refreshButton" onclick="window.location.href='https://thecabalofthieves.com/';">Tell me more about The Cabal of Thieves.</button>
+                <button id="refreshButton" onclick="window.location.href='https://github.com/callmepartario/cabal-faction-quiz';">Show me the source code for the quiz.</button>
+                <button id="refreshButton" onclick="window.location.href='https://ko-fi.com/oldgus';">I want to deliver a few doubloons to Old Gus.</a></button>
+            </div>
         </div>
     </div>
     <script src="js/cabalquiz.js"></script>
