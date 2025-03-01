@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 "Do they have anything we want?",
                 "Send them to the Ferryman, sort the rest out later!",
                 "That ship would make a beautiful bonfire...",
-                "Alert the crew, but let them make the first move.",
+                "Alert my crew, but the other ship make the first move.",
                 "How hilarious would it be if the kraken attacked us all?"
             ],
             personality: [

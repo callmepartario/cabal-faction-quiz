@@ -6,27 +6,42 @@
     <link rel="stylesheet" href="css/cabalquiz.css">
     <link rel="manifest" href="js/cabalquiz.json">
     <title>The Cabal of Thieves: Faction Affinity Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="d-table">
             <div class="d-table-row">
-                <div class="d-table-cell">
+                <div class="d-table-cell valign-middle">
                     <img src="images/cabal.webp" alt="Logo" aria-hidden="true" class="cabal-logo">
                 </div>
-                <div class="d-table-cell">
+                <div class="d-table-cell valign-middle">
                     <p><strong><a href="https://thecabalofthieves.com/">The Cabal of Thieves</a></strong></p> 
                     <h1>Faction Affinity Quiz</h1>
                 </div>
             </div>
         </div>
         <div id="quizContainer">
-            <h2>Question <span id="questionNumber">X</span> of <span id="questionsTotal">Y</span></h2>
-            <p id="question"></p>
+            <h2>Question <span id="questionNumber">X</span> of <span id="questionsTotal">Y</span>:</h2>
+            <div id="questionContainer">
+                <div class="d-table">
+                    <div class="d-table-row">
+                        <div class="d-table-cell valign-top" style="width: 5%;">
+                            <img class="dialogue" src="images/dialogue.webp" alt="Dialogue" aria-hidden="true">
+                        </div>
+                        <div class="d-table-cell valign-top">
+                            <p id="question"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
             <div id="answers"></div>
         </div>
         <div id="resultContainer" style="display:none;">
-            <p>Based on your answers, you might want to join:</p>
+            <p style="text-align: center;">Based on your answers, you might want to join:</p>
             <img id="icon-ac" class="emblem" src="images/ac.webp" alt="Emblem" aria-hidden="true">
             <img id="icon-ao" class="emblem" src="images/ao.webp" alt="Emblem" aria-hidden="true">
             <img id="icon-kw" class="emblem" src="images/kw.webp" alt="Emblem" aria-hidden="true">
