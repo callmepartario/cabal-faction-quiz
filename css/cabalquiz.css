@@ -52,8 +52,6 @@ a:hover { color: #f7eb5a; }
   margin-left: 1.5rem;
 }
 img.cabal-logo { margin-left: 1rem; }
-h1, h2, h3, h4, h5, h6 { 
-}
 h1 {
   font-family: "Jim Nightshade";
   font-weight: 400;
@@ -114,15 +112,27 @@ button:active {
 }
 
 /* Results styling */
-#result {
+#faction { 
+  padding: 0.75rem 0.75rem 0.25rem 0.75rem;
+  margin-top: 0px;
+  margin-bottom: 1rem;
+}
+.emblem { 
+  display: none;
+  max-width: 192px;
+  margin-bottom: 0rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.factionlabel {
+  display: block;
+  text-align: center;
   font-family: "Jim Nightshade";
   font-weight: 400;
   font-style: normal;
   font-size: 2.5rem;
-  line-height: 3rem;
-  text-align: center;
-  padding: 1.25rem 0.75rem 0.75rem 0.75rem;
-  margin-bottom: 0;
+  line-height: 0.25rem;
+  text-shadow: 2px 1px #000;
 }
 
 /* Results table */
@@ -130,59 +140,59 @@ table { width: 100%; font-size: 0.8rem; }
 th, td { padding: 0.25rem; vertical-align: top; overflow: hidden; }
 .table-stripe { background-color: #101010; }
 .graph { display: inline-block; }
-.emblem { display: block; text-align: center; margin-bottom: 1rem; }
 
 /* Ancient Order of Chaos */
-#icon-ao { display: none; max-width: 200px; margin-left: auto; margin-right: auto; }
-#icon-ao.AO { display: block; }
-p.AO { 
+div.AO { 
   color: #8eb34b;
   border-top: 3px solid #50814b;
   border-bottom: 3px solid #50814b;
-  background-color: #315633;
+  background: #315633;
+  background: linear-gradient(180deg, #315633 0%, #1a331b 100%);
 }
+div.AO img.emblem-AO { display: block; }
 #graphAO {  background-color: #50814b; }
 
 /* The Ashen Creed */
-#icon-ac { display: none; max-width: 200px; margin-left: auto; margin-right: auto; }
-#icon-ac.AC { display: block; }
-p.AC { 
+div.AC { 
   color: #c03834;
   border-top: 3px solid #972d2f;
   border-bottom: 3px solid #972d2f;
-  background-color: #411817;
+  background: #411817;
+  background: linear-gradient(180deg, #411817 0%, #2e0f0e 100%);
 }
+div.AC img.emblem-AC { display: block; }
 #graphAC {  background-color: #972d2f; }
 
 /* Kinship of the Wilds */
-#icon-kw { display: none; max-width: 200px; margin-left: auto; margin-right: auto; }
-#icon-kw.KW { display: block; }
-p.KW { 
+div.KW { 
   color: #d9b3db;
   border-top: 3px solid #9f5f91;
   border-bottom: 3px solid #9f5f91;
-  background-color: #4a2756;
+  background: #4a2756;
+  background: linear-gradient(180deg, #4a2756 0%, #33173c 100%);
 }
+div.KW img.emblem-KW { display: block; }
 #graphKW {  background-color: #9f5f91; }
 
 /* Norsemen of the Shores */
-#icon-ns { display: none; max-width: 200px; margin-left: auto; margin-right: auto; }
-#icon-ns.NS { display: block; }
-p.NS { 
+div.NS { 
   color: #82ced7;
   border-top: 3px solid #59aabe;
   border-bottom: 3px solid #59aabe;
-  background-color: #234a6c;
+  background: #234a6c;
+  background: linear-gradient(180deg, #234a6c 0%, #122c43 100%);
 }
+div.NS img.emblem-NS { display: block; }
+
 #graphNS {  background-color: #59aabe; }
 
 /* Marauders of Golden Shores */
-#icon-mg { display: none; max-width: 200px; margin-left: auto; margin-right: auto; }
-#icon-mg.MG { display: block; }
-p.MG { 
+div.MG { 
   color: #98c7b2;
   border-top: 3px solid #69a188;
   border-bottom: 3px solid #69a188;
   background-color: #2b513f;
+  background: linear-gradient(180deg, #2b513f 0%, #1a3b2c 100%);
 }
+div.MG img.emblem-MG { display: block; }
 #graphMG {  background-color: #69a188; }

@@ -269,12 +269,7 @@ document.addEventListener('DOMContentLoaded', function () {
         result.classList.add(personalityType);
         document.getElementById('quizContainer').style.display = 'none';
 
-        /* Make faction icon visible */
-        document.getElementById('icon-ac').classList.add(personalityType);
-        document.getElementById('icon-ao').classList.add(personalityType);
-        document.getElementById('icon-kw').classList.add(personalityType);
-        document.getElementById('icon-ns').classList.add(personalityType);
-        document.getElementById('icon-mg').classList.add(personalityType);
+        document.getElementById('faction').classList.add(personalityType);
 
         /* Calculte affinity percentage to display */
         const scoreAC = Math.round(personalityScores["AC"] / questionsTotal * 100);

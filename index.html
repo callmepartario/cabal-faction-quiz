@@ -42,13 +42,14 @@
         </div>
         <div id="resultContainer" style="display:none;">
             <p style="text-align: center;">Based on your answers, you might want to join:</p>
-            <img id="icon-ac" class="emblem" src="images/ac.webp" alt="Emblem" aria-hidden="true">
-            <img id="icon-ao" class="emblem" src="images/ao.webp" alt="Emblem" aria-hidden="true">
-            <img id="icon-kw" class="emblem" src="images/kw.webp" alt="Emblem" aria-hidden="true">
-            <img id="icon-ns" class="emblem" src="images/ns.webp" alt="Emblem" aria-hidden="true">
-            <img id="icon-mg" class="emblem" src="images/mg.webp" alt="Emblem" aria-hidden="true">
-            <p id="result"></p>
-            <p>Here are your full results:</p>
+            <div id="faction">
+                <img class="emblem emblem-AC" src="images/ac.webp" alt="Emblem" aria-hidden="true">
+                <img class="emblem emblem-AO" src="images/ao.webp" alt="Emblem" aria-hidden="true">
+                <img class="emblem emblem-KW" src="images/kw.webp" alt="Emblem" aria-hidden="true">
+                <img class="emblem emblem-NS" src="images/ns.webp" alt="Emblem" aria-hidden="true">
+                <img class="emblem emblem-MG" src="images/mg.webp" alt="Emblem" aria-hidden="true">
+                <p id="result" class="factionlabel"></p>
+            </div>
             <table cellspacing="0" cellpadding="0">
                 <caption style="display: none;">Full Results</caption>
                 <thead>
@@ -86,7 +87,7 @@
                     </tr>
                 </tbody>
             </table>
-            <p class="small">Note: Numbers may not add up to 100% due to rounding.</p>
+            <p class="small">Numbers may not add up to 100% due to rounding.</p>
             <div class="questionContainer">
                 <div class="d-table">
                     <div class="d-table-row">
@@ -101,10 +102,10 @@
             </div>
             <div id="answers" class="answers">
                 <button id="refreshButton" onClick="window.location.reload();">Let me take the quiz again!</button>
-                <button id="refreshButton" onclick="window.location.href='https://www.seaofthieves.com/';">What is the Sea of Thieves?</button>
+                <button id="refreshButton" onclick="window.location.href='https://www.seaofthieves.com/';">What is Sea of Thieves?</button>
                 <button id="refreshButton" onclick="window.location.href='https://thecabalofthieves.com/';">Tell me more about The Cabal of Thieves.</button>
-                <button id="refreshButton" onclick="window.location.href='https://github.com/callmepartario/cabal-faction-quiz';">Show me the source code for the quiz.</button>
-                <button id="refreshButton" onclick="window.location.href='https://ko-fi.com/oldgus';">I want to deliver a few doubloons to Old Gus.</a></button>
+                <button id="refreshButton" onclick="window.location.href='https://github.com/callmepartario/cabal-faction-quiz';">I want to discover the mysteries of the quiz.</button>
+                <button id="refreshButton" onclick="window.location.href='https://ko-fi.com/oldgus';">Send Old Gus a few doubloons!</a></button>
             </div>
         </div>
     </div>
