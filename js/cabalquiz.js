@@ -39,11 +39,11 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             question: "It's Friday night, and you've just finished supplying your ship at the outpost. Where to?",
             answers: [
-                "The Devil's Roar — The sight of erupting volcanoes stirs my passions.",
+                "The Devil's Roar — The sight of erupting volcano stirs my passions.",
                 "Doesn't matter — so long as there's a fight to be had.",
-                "Kraken hunting in the Wilds!",
-                "You know, there's always action in the Ancient Isles!",
-                "The cerulean skies and white sandy beaches of the Shores of Plenty are calling to me..."
+                "I'm never seasick. Let's hunt sea beasties in the Wilds!",
+                "You know there's always something going down in in the Ancient Isles!",
+                "The cerulean skies and white sandy beaches of the Shores of Plenty always call to me..."
             ],
             personality: [
                 "AC", 
@@ -90,11 +90,11 @@ document.addEventListener('DOMContentLoaded', function () {
         {
             question: "Where did you come from?",
             answers: [
-                "Forced from your ancestral home, you subsisted off the great beasts beneath the waves to became a true pirate.",
+                "Forced from your ancestral home, you subsisted off the great beasts beneath the waves to become a true pirate.",
                 "You are heir to the ruins and secrets of the islands — and even lay claim to treasures hidden beneath the sea.",
                 "Banished from your homeland, you now hone your skills to perfection — and protect the worthy.",
                 "Eager to make you fortune, you voyaged from your frozen homeland, braving intense storms to reach a distant paradise.",
-                "You have a mysterious, smoldering allure. Your history has been consumed by the volcanic eruptions that call to you — like a moth to a flame."
+                "You have a mysterious, smoldering allure — like a moth to a flame, your history has been consumed by the volcanic eruptions that call to you."
             ],
             personality: [
                 "KW", 
