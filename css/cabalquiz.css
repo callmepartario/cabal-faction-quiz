@@ -6,7 +6,7 @@ body {
   font-style: normal;
   font-size: 1rem;
   background: #285759;
-  background: linear-gradient(180deg, rgba(53,64,64,1) 0%, rgba(29,41,51,1) 100%);
+  background: linear-gradient(180deg, #354040 0%, #1d2933 100%);
   color: #fff;
   align-items: top;
   height: 100vh;
@@ -114,7 +114,7 @@ button:active {
 
 /* Results styling */
 #faction { 
-  padding: 0.75rem 0.75rem 0.25rem 0.75rem;
+  padding: 0.75rem 0.75rem 0rem 0.75rem;
   margin-top: 0px;
   margin-bottom: 1rem;
 }
@@ -155,9 +155,9 @@ div.AO img.emblem-AO { display: block; }
 
 /* The Ashen Creed */
 div.AC { 
-  color: #c03834;
-  border-top: 3px solid #972d2f;
-  border-bottom: 3px solid #972d2f;
+  color: #fe8d08;
+  border-top: 3px solid #9c080b;
+  border-bottom: 3px solid #9c080b;
   background: #411817;
   background: linear-gradient(180deg, #411817 0%, #2e0f0e 100%);
 }
@@ -166,9 +166,9 @@ div.AC img.emblem-AC { display: block; }
 
 /* Kinship of the Wilds */
 div.KW { 
-  color: #d9b3db;
-  border-top: 3px solid #9f5f91;
-  border-bottom: 3px solid #9f5f91;
+  color: #66a0cc;
+  border-top: 3px solid #792266;
+  border-bottom: 3px solid #792266;
   background: #4a2756;
   background: linear-gradient(180deg, #4a2756 0%, #33173c 100%);
 }
@@ -177,9 +177,9 @@ div.KW img.emblem-KW { display: block; }
 
 /* Norsemen of the Shores */
 div.NS { 
-  color: #82ced7;
-  border-top: 3px solid #59aabe;
-  border-bottom: 3px solid #59aabe;
+  color: #a9dadf;
+  border-top: 3px solid #0e9abd;
+  border-bottom: 3px solid #0e9abd;
   background: #234a6c;
   background: linear-gradient(180deg, #234a6c 0%, #122c43 100%);
 }
@@ -188,11 +188,11 @@ div.NS img.emblem-NS { display: block; }
 
 /* Marauders of Golden Shores */
 div.MG { 
-  color: #98c7b2;
-  border-top: 3px solid #69a188;
-  border-bottom: 3px solid #69a188;
-  background-color: #2b513f;
-  background: linear-gradient(180deg, #2b513f 0%, #1a3b2c 100%);
+  color: #e7b337;
+  border-top: 3px solid #0ba78d;
+  border-bottom: 3px solid #0ba78d;
+  background-color: #2b514a;
+  background: linear-gradient(180deg, #2b514a 0%, #203e38 100%);
 }
 div.MG img.emblem-MG { display: block; }
-#graphMG {  background-color: #0ba761; }
+#graphMG {  background-color: #0ba78d; }
