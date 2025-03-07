@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>The Cabal of Thieves: Faction Affinity Quiz</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/cabalquiz.css">
-    <link rel="manifest" href="js/cabalquiz.json">
-    <title>The Cabal of Thieves: Faction Affinity Quiz</title>
+    <meta property="og:type" content="website">
+	<meta property="og:url" content="https://callmepartario.github.io/cabal-payout">
+	<meta property="og:title" content="The Cabal of Thieves Payout Calculator">
+	<meta property="og:description" content="An ARG calculator for the Cabal of Theieves community.">
+	<meta property="og:image" content="images/cabal.webp">
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Jim+Nightshade&display=swap" rel="stylesheet">
@@ -61,9 +68,9 @@
                 </thead>
                 <tbody>
                     <tr class="table-stripe">
-                        <th scope="col" style="text-align: left; font-weight: normal;">Ancient Order of Chaos</th>
-                        <td scope="col" style="text-align: right;"><span id="scoreAO"></span>%</td>
-                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphAO">&nbsp;</span></td>
+                        <th scope="col" style="text-align: left; font-weight: normal;">Marauders of Golden Shores</th>
+                        <td scope="col" style="text-align: right;"><span id="scoreMG"></span>%</td>
+                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphMG">&nbsp;</span></td>
                     </tr>
                     <tr>
                         <th scope="col" style="text-align: left; font-weight: normal;">Ashen Creed</th>
@@ -71,9 +78,9 @@
                         <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphAC">&nbsp;</span></td>
                     </tr>
                     <tr class="table-stripe">
-                        <th scope="col" style="text-align: left; font-weight: normal;">Kinship of the Wilds</th>
-                        <td scope="col" style="text-align: right;"><span id="scoreKW"></span>%</td>
-                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphKW">&nbsp;</span></td>
+                        <th scope="col" style="text-align: left; font-weight: normal;">Ancient Order of Chaos</th>
+                        <td scope="col" style="text-align: right;"><span id="scoreAO"></span>%</td>
+                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphAO">&nbsp;</span></td>
                     </tr>
                     <tr>
                         <th scope="col" style="text-align: left; font-weight: normal;">Norsemen of the Shores</th>
@@ -81,13 +88,13 @@
                         <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphNS">&nbsp;</span></td>
                     </tr>
                     <tr class="table-stripe">
-                        <th scope="col" style="text-align: left; font-weight: normal;">Marauders of Golden Shores</th>
-                        <td scope="col" style="text-align: right;"><span id="scoreMG"></span>%</td>
-                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphMG">&nbsp;</span></td>
+                        <th scope="col" style="text-align: left; font-weight: normal;">Kinship of the Wilds</th>
+                        <td scope="col" style="text-align: right;"><span id="scoreKW"></span>%</td>
+                        <td scope="col" style="text-align: left;" aria-hidden="true"><span class="graph" id="graphKW">&nbsp;</span></td>
                     </tr>
                 </tbody>
             </table>
-            <p class="small">Numbers may not add up to 100% due to rounding.</p>
+            <p class="small">(Numbers may not add up to 100% due to rounding.)</p>
             <div class="questionContainer">
                 <div class="d-table">
                     <div class="d-table-row">
@@ -101,7 +108,7 @@
                 </div>
             </div>
             <div id="answers" class="answers">
-                <button id="refreshButton" onClick="window.location.reload();">Let me take the quiz again!</button>
+                <button id="refreshButton" onclick="window.location.reload();">Let me take the quiz again!</button>
                 <button id="refreshButton" onclick="window.location.href='https://www.seaofthieves.com/';">What is Sea of Thieves?</button>
                 <button id="refreshButton" onclick="window.location.href='https://thecabalofthieves.com/';">Tell me more about The Cabal of Thieves.</button>
                 <button id="refreshButton" onclick="window.location.href='https://github.com/callmepartario/cabal-faction-quiz';">I want to discover the mysteries of the quiz.</button>
